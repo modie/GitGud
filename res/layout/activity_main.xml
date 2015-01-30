@@ -8,9 +8,50 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Main" >
 
-    <TextView
+    <Button
+        android:id="@+id/btnPlay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="26dp"
+        android:layout_toLeftOf="@+id/button3"
+        android:text="Play" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnPlay"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="42dp"
+        android:text="Exit" />
+
+    <Button
+        android:id="@+id/btnTodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnExit"
+        android:layout_alignLeft="@+id/btnExit"
+        android:text="Todo" />
+
+    <Button
+        android:id="@+id/btnTests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnPlay"
+        android:layout_alignBottom="@+id/btnPlay"
+        android:layout_toRightOf="@+id/btnPlay"
+        android:text="Tests" />
+
+    <Button
+        android:id="@+id/btnLevelCreator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnTests"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/btnTests"
+        android:text="LevelCreate" />
 
 </RelativeLayout>
